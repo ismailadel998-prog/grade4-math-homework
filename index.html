@@ -361,6 +361,9 @@ function mark(q, a){
 const filled = (q, a) => { a = a || {}; return q.kind === 'multi' ? (a.m || []).length > 0 : partsOf(q).every(p => String(a[p] || '').trim() !== ''); };
 
 /* ===================== state ===================== */
+/* Day 1 and Day 2 are hidden: the page starts from Sunday. Remove an id from this list to show that day again. */
+const HIDDEN_DAYS = ['g4-57', 'g4-58'];
+for (let i = DAYS.length - 1; i >= 0; i--) if (HIDDEN_DAYS.includes(DAYS[i].id)) DAYS.splice(i, 1);
 const pgL = d => typeof d.page === 'number' ? 'Page ' + d.page : d.page;
 const S = { name:'', cls:'', day:DAYS[DAYS.length - 1].id, ans:{}, checked:{}, results:{} };
 const $ = id => document.getElementById(id);
