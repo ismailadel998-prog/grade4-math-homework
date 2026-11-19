@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}  .c4 .lines{margin-left:30px}.c4 .lines .l{font-size:17px;gap:6px}.c4 .lines .l > span:first-child{min-width:92px}.c4 input.b{width:92px;font-size:18px}
 </style></head><body>
-<title>Grade 4 Math Homework – Topic 5 Lesson 1</title>
+<title>Grade 4 Math Homework – Topic 5</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
   /* Layout: a stack of workbook pages (navy bands, green page edge) under a sticky homework bar.
@@ -108,6 +108,18 @@
   input.b:focus{border-color:#2c63c9;box-shadow:0 0 0 2px rgba(44,99,201,.2)}
   input.b.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok);font-weight:700}
   input.b.bad{background:var(--bad-bg);border-color:var(--bad);color:var(--bad);font-weight:700}
+  .page.sheet{background:#fff;border:1.5px solid #222;box-shadow:0 2px 10px rgba(17,28,87,.12);padding:28px 40px 22px}
+  .page.sheet::after{display:none}
+  .qs.ldgrid{gap:0!important}
+  .qs.ldgrid > *{padding:14px 12px 30px;min-height:150px}
+  .qs.ldgrid > *:nth-child(odd){background:#ece9e1}
+  .ldq{display:flex;gap:16px;align-items:flex-start;font-size:24px;font-variant-numeric:tabular-nums}
+  .ldq .num{padding-top:58px}
+  .ldh{display:inline-grid;grid-template-columns:auto auto;align-items:end}
+  .ldh .ldtop{padding-left:8px;padding-bottom:4px}
+  .ldh input.ldin{width:96px;height:42px;font-size:22px}
+  .ldh .ldv{padding-right:6px;font-size:28px}
+  .ldh .ldd{font-size:28px;letter-spacing:4px;border-top:2.5px solid var(--ink);border-left:2.5px solid var(--ink);border-top-left-radius:10px;padding:2px 22px 2px 10px}
   .vert{display:inline-grid;grid-template-columns:auto auto;column-gap:8px;font-size:21px;font-variant-numeric:tabular-nums;line-height:1.35}
   .vert .r{text-align:right;padding-right:6px}
   .vert .u{border-bottom:2px solid var(--ink)}
@@ -196,12 +208,15 @@
     .lines .l > span:first-child{min-width:0}
   }
   @media (prefers-reduced-motion:reduce){ *{transition:none!important} }
+  /* deep link from the teacher's Mission Mode (index.html#q=g4-57:7) */
+  .q.flash{outline:4px solid #ff7a45;outline-offset:8px;border-radius:6px;animation:qflash 1s 3}
+  @keyframes qflash{50%{outline-color:#ffd23f}}
   .c4 .lines{margin-left:30px}.c4 .lines .l{font-size:17px;gap:6px}.c4 .lines .l > span:first-child{min-width:92px}.c4 input.b{width:92px;font-size:18px}
 </style>
 
 <header class="bar"><div class="in">
   <div class="row1">
-    <h1>Grade 4 Math Homework · Topic 5 – Lesson 1</h1>
+    <h1>Grade 4 Math Homework · Topic 5 – Lessons 1 &amp; 4 · Long Division</h1>
     <div class="prog"><div class="t"><span id="dayName"></span> · answered <b id="nDone">0</b> of <b id="nAll">0</b></div><div class="track"><i id="fill"></i></div></div>
   </div>
   <nav class="days" id="days" aria-label="Homework day"></nav>
@@ -226,14 +241,27 @@ const LOOK = {
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;line-height:1.7">
         <div><b>Find 210 ÷ 7.</b><br>What is the basic fact?<br><b>21 ÷ 7 = 3</b><br><b>21 tens ÷ 7</b> = 3 tens or 30.<br>210 ÷ 7 = 30</div>
         <div><b>Find 4,200 ÷ 6.</b><br>What is the basic fact?<br><b>42 ÷ 6 = 7</b><br><b>42 hundreds ÷ 6</b> = 7 hundreds or 700.<br>4,200 ÷ 6 = 700</div></div></div>
-      <div class="bubble">When dividing numbers that end in zero, use basic division facts and place value to help divide mentally.</div></div>`
+      <div class="bubble">When dividing numbers that end in zero, use basic division facts and place value to help divide mentally.</div></div>`,
+  '5-4': `<div class="look"><div>Jamal has 20 marbles to put into bags. He plans to put 6 marbles in each bag. How many bags will Jamal be able to fill?
+      <p style="margin:10px 0 4px">Find 20 ÷ 6.</p>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:20px;letter-spacing:2px">${'<span style="border:2px solid #555;border-radius:10px;padding:2px 8px">●●●<br>●●●</span>'.repeat(3)} <span>●●</span></div>
+      <p style="margin:8px 0 10px">Jamal can fill 3 bags with 6 marbles. There will be 2 marbles left over.</p>
+      <b>There are 3 ways to interpret a remainder.</b>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:8px;line-height:1.5;font-size:15px">
+        <div>The remainder can be ignored.<br><i>How many bags did Jamal fill?</i><br>3 bags</div>
+        <div style="border-left:2px solid #999;padding-left:12px">The remainder can be the answer.<br><i>How many marbles are not in the bags?</i><br>2 marbles</div>
+        <div style="border-left:2px solid #999;padding-left:12px">You need to add 1 to the quotient.<br><i>How many bags are needed for all of the marbles to be in bags?</i><br>4 bags</div></div></div>
+      <div class="bubble">The remainder is the number left after the division is complete. Remember, the remainder should be less than the divisor.</div></div>`
 };
-const TITLES = { '5-1':'Mental Math: Find Quotients' };
-const TOPIC = { '5-1':5 };
+const TITLES = { '5-1':'Mental Math: Find Quotients', '5-4':'Interpret Remainders', 'LD':'Divide Using Long Division (Worksheet)' };
+const TOPIC = { '5-1':5, '5-4':5, 'LD':5 };
 
 const N = (n, text, key, unit, extra) => Object.assign({ n, kind:'num', text, unit, key:{ a:key } }, extra || {});
 const MC = (n, text, opts, key, extra) => Object.assign({ n, kind:'mc', text, opts, key:{ c:key } }, extra || {});
 const D = (n, x, y) => N(n, '<span class="inl">' + x + '</span>', y);
+const W = (n, a, b, rows) => ({ n, kind:'lines', text:a, lines:rows.map(r => [r[0], r[1]]), key:Object.fromEntries(rows.map(r => [r[1], r[2]])) });
+const RW = (n, x, q, r) => W(n, '', 0, [[x + ' =', 'a', q], ['with … left over', 'b', r]]);
+const H = (n, a, b, key) => ({ n, kind:'house', a, b, key:{ a:key } });
 const L = (n, rows) => ({ n, kind:'lines', lines:rows.map(r => [r[0], r[1]]), key:{ a:rows[0][2], b:rows[1][2], c:rows[2][2] } });
 
 const CHART = `<div class="data" style="display:block;padding:10px 16px;min-width:340px"><div style="font-weight:700;text-align:center;margin-bottom:8px">Barry’s Best Sellers (total sales)</div>
@@ -264,7 +292,42 @@ const DAYS = [
          lines:[['Hamburgers','a'],['Hot dogs','b']], key:{ a:'400', b:'600' } } ] },
      { assess:true, cols:2, qs:[
        { n:26, kind:'multi', text:'Select all the quotients that are equal to 30.', opts:['180 ÷ 6','1,800 ÷ 3','210 ÷ 7','120 ÷ 4','240 ÷ 4'], key:{ m:[0,2,3] } },
-       MC(27,'Which division equation is NOT correct?',['5,600 ÷ 8 = 700','4,900 ÷ 7 = 70','360 ÷ 4 = 90','4,500 ÷ 9 = 500'],'B',{ col:true }) ] } ] }
+       MC(27,'Which division equation is NOT correct?',['5,600 ÷ 8 = 700','4,900 ÷ 7 = 70','360 ÷ 4 = 90','4,500 ÷ 9 = 500'],'B',{ col:true }) ] } ] },
+
+ { id:'g4-63', date:'15 Nov', day:'Sunday', page:63, lesson:'5-4', first:true, plan:'Answer page 63 in your math booklet',
+   blocks:[
+     { dir:'For <b>1–4</b>, find the number of equal groups and the number left over.', cols:2, qs:[
+       RW(1,'66 ÷ 5','13','1'), RW(2,'94 ÷ 6','15','4'), RW(3,'29 ÷ 9','3','2'), RW(4,'46 ÷ 8','5','6') ] },
+     { dir:'For <b>5–6</b>, divide. Then interpret the remainder.', cols:2, qs:[
+       W(5,'77 apples<br>3 apples in each bag',0,[['77 ÷ 3 =','a','25'],['with … left over','b','2'],['<i>How many apples are not in bags?</i>','c','2']]),
+       W(6,'71 cards<br>5 cards in each box',0,[['71 ÷ 5 =','a','14'],['with … left over','b','1'],['<i>How many boxes are needed for all the cards?</i>','c','15']]) ] } ] },
+
+ { id:'g4-64', date:'16 Nov', day:'Monday', page:64, lesson:'5-4', plan:'Answer page 64 in your math booklet',
+   blocks:[
+     { cols:2, split:true, qs:[
+       { n:7, kind:'choice', text:'Why should the remainder be less than the divisor?',
+         opts:['If the remainder is equal to or greater than the divisor, you can still make another equal group.','The remainder must always be 0.','The remainder must be greater than the quotient.'],
+         key:{ c:'If the remainder is equal to or greater than the divisor, you can still make another equal group.' } },
+       { n:8, kind:'choice', text:'There are 25 students in Ms. Morris’s class. She wants to divide the class into 3, 4, or 5 equal teams with all students on a team. Which number of teams can Ms. Morris make? Explain.',
+         opts:['3 teams','4 teams','5 teams'], key:{ c:'5 teams' } } ] },
+     { cols:2, split:true, qs:[
+       N(9,'Tammy decorated her art project with 12 different colors of sequins. If she used 15 of each color, how many sequins did Tammy use?','180','sequins'),
+       W(10,'<span class="tag">Number Sense</span> There are 14 girls trying out for volleyball. Each team will have 6 players. How many full teams will be made? How many girls will not make a team?',0,[['Full teams:','a','2'],['Girls not on a team:','b','2']]) ] },
+     { cols:1, qs:[
+       N(11,'<span class="tag">Model with Math</span> How many strings are used to make 4 guitars like the ones in the picture? Draw a bar diagram to show how you found your answer. <i>(Tejano musicians use 12-string guitars.)</i>','48','strings') ] },
+     { cols:2, split:true, qs:[
+       N(12,'There are 26 students in Dante’s class. One student is out sick today. The students want to split into teams of six for a game. How many full teams can they make?','4','full teams'),
+       N(13,'<span class="tag">Higher Order Thinking</span> Carl has 98 pictures to put in an album. He can put 8 pictures on each page. How many pictures will Carl put on the last page? Explain.','2','pictures') ] },
+     { assess:true, cols:1, qs:[
+       W(14,'Jada bought an art kit with 58 colored pencils. She and her 3 sisters will share the pencils equally. How many pencils will each person receive? Will there be any pencils left over? If so, how many?',0,[['Pencils for each person:','a','14'],['Pencils left over:','b','2']]) ] } ] },
+
+ { id:'g4-ld', date:'18 Nov', day:'Wednesday', page:'Worksheet', lesson:'LD', plan:'Answer homework page questions (long-division worksheet)',
+   blocks:[
+     { dir:'<span style="font-family:Georgia,serif;font-size:21px;text-decoration:underline">Homework questions :</span>', cols:3, ldgrid:true, qs:[
+       H(1,'92','2','46'), H(2,'84','3','28'), H(3,'91','7','13'),
+       H(4,'64','4','16'), H(5,'66','3','22'), H(6,'95','5','19'),
+       H(7,'84','4','21'), H(8,'75','3','25'), H(9,'84','6','14') ] },
+     { cols:1, qs:[], note:'<div style="text-align:center;font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:22px;margin-top:6px">I can divide 😊</div>' } ] }
 ];
 
 // what the student sees as the correct answer after submitting
@@ -298,7 +361,8 @@ function mark(q, a){
 const filled = (q, a) => { a = a || {}; return q.kind === 'multi' ? (a.m || []).length > 0 : partsOf(q).every(p => String(a[p] || '').trim() !== ''); };
 
 /* ===================== state ===================== */
-const S = { name:'', cls:'', day:DAYS[0].id, ans:{}, checked:{}, results:{} };
+const pgL = d => typeof d.page === 'number' ? 'Page ' + d.page : d.page;
+const S = { name:'', cls:'', day:DAYS[DAYS.length - 1].id, ans:{}, checked:{}, results:{} };
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]));
 const dayOf = id => DAYS.find(d => d.id === id);
@@ -310,12 +374,12 @@ function closeModal(){ $('modal').hidden = true; }
 const LS = () => 'g4hw51:' + (S.name ? (S.cls + '|' + S.name).toLowerCase() : 'guest');
 function save(){ try { localStorage.setItem(LS(), JSON.stringify({ ans:S.ans, checked:S.checked, results:S.results })); } catch(e){} }
 function load(){ try { return JSON.parse(localStorage.getItem(LS()) || 'null'); } catch(e){ return null; } }
-function rememberDay(){ try { localStorage.setItem('g4hw51:day', S.day); } catch(e){} }
+function rememberDay(){ try { localStorage.setItem('g4hw13:day', S.day); } catch(e){} }
 
 /* ===================== rendering ===================== */
 function renderDays(){
   $('days').innerHTML = DAYS.map(d => `<button class="day ${d.id === S.day ? 'on' : ''}" data-day="${d.id}">
-      <b>${d.day} ${d.date}${S.results[d.id] ? '<span class="dot" title="Submitted"></span>' : ''}</b>Page ${d.page}</button>`).join('');
+      <b>${d.day} ${d.date}${S.results[d.id] ? '<span class="dot" title="Submitted"></span>' : ''}</b>${pgL(d)}</button>`).join('');
 }
 function nb(id, p, cls){ return `<input class="b ${cls || ''}" id="${id.replace(':', '_')}_${p}" inputmode="decimal" autocomplete="off" data-q="${id}" data-p="${p}" aria-label="Answer">`; }
 
@@ -324,6 +388,8 @@ function qHtml(d, q){
   const head = q.text ? `<div class="qline"><span class="num">${q.n}.</span><div class="txt">${q.tag && !q.text.includes(q.tag) ? `<span class="tag">${q.tag}</span> ` : ''}${q.text}</div></div>` : '';
   let body = '';
   switch (q.kind){
+    case 'house':
+      body = `<div class="ldq"><span class="num">${q.n})</span><div class="ldh"><span></span><span class="ldtop">${nb(id, 'a', 'ldin')}</span><span class="ldv">${q.b}</span><span class="ldd">${q.a.split('').join(' ')}</span></div></div>`; break;
     case 'vert':
       body = `<div class="qline"><span class="num">${q.n}.</span><div class="vert"><span></span><span class="r">${q.a}</span><span>×</span><span class="r u">${q.b}</span></div></div>
         <div class="ans">${nb(id, 'a')}</div>`; break;
@@ -365,24 +431,25 @@ function render(){
   const d = dayOf(S.day);
   renderDays();
   const left = d.page % 2 === 0;
-  let h = `<section class="page ${left ? 'left' : ''}">
+  let h = `<section class="page ${left ? 'left' : ''} ${d.lesson === 'LD' ? 'sheet' : ''}">
     <span class="hwtag">${d.day} ${d.date} · ${d.plan}</span>
     <div class="namebar"><label for="nameIn">Name</label>
       <div class="nm"><input id="nameIn" placeholder="Start typing your first name..." autocomplete="off" spellcheck="false">
         <div class="ac" id="ac" hidden></div><div class="help" id="nameHelp">Type the first letters of your first name, then tap it in the list.</div></div>
       <label for="clsSel">Class</label><select class="clsel" id="clsSel"><option value="">—</option>${CLASSES.map(c => `<option>${c}</option>`).join('')}</select></div>`;
   const pend = DAYS.filter(x => !S.results[x.id] && x.id !== d.id);
-  if (S.name && DAYS.some(x => S.results[x.id]) && pend.length) h += `<div class="remind">👉 Remember: you still have homework for <b>${pend.map(x => x.day.trim() + ' (page ' + x.page + ')').join(', ')}</b>. <button class="tb fill" data-day="${pend[0].id}">Go there</button></div>`;
+  if (S.name && DAYS.some(x => S.results[x.id]) && pend.length) h += `<div class="remind">👉 Remember: you still have homework for <b>${pend.map(x => x.day.trim() + ' (' + pgL(x).toLowerCase() + ')').join(', ')}</b>. <button class="tb fill" data-day="${pend[0].id}">Go there</button></div>`;
   if (d.first) h += `<div class="page-top"><div class="ap-box"><div class="ap-title">Additional<br>Practice <em>${d.lesson}</em></div><div class="ap-sub">${TITLES[d.lesson]}</div></div></div>
       <div class="another"><h3>Another Look!</h3>${LOOK[d.lesson]}</div>`;
   d.blocks.forEach(b => {
-    if (b.dir) h += `<div><div class="dir">${b.dir}</div></div>`;
+    if (b.dir) h += b.ldgrid ? `<div style="margin:6px 0 14px">${b.dir}</div>` : `<div><div class="dir">${b.dir}</div></div>`;
     if (b.assess) h += `<div class="assess"><span class="pill"><i>✓</i>Assessment Practice</span><hr></div>`;
     if (b.data) h += `<div class="wrapx" style="display:flex;justify-content:flex-end;margin-bottom:6px">${b.data}</div>`;
-    h += `<div class="qs ${b.split ? 'split c2' : 'c' + b.cols}">${b.qs.map(q => qHtml(d, q)).join('')}</div>`;
+    if (b.note){ h += b.note; return; }
+    h += `<div class="qs ${b.ldgrid ? 'ldgrid ' : ''}${b.split ? 'split c2' : 'c' + b.cols}">${b.qs.map(q => qHtml(d, q)).join('')}</div>`;
   });
-  h += `<div class="page-foot">${left ? `<span>${d.page}</span><span class="tl"><b>Topic ${TOPIC[d.lesson]}</b><em>Lesson ${d.lesson}</em></span>`
-                                     : `<span class="tl"><b>Topic ${TOPIC[d.lesson]}</b><em>Lesson ${d.lesson}</em></span><span>${d.page}</span>`}</div></section>`;
+  h += `<div class="page-foot">${left ? `<span>${d.page}</span><span class="tl"><b>Topic ${TOPIC[d.lesson]}</b><em>${d.lesson === 'LD' ? 'Long Division' : 'Lesson ' + d.lesson}</em></span>`
+                                     : `<span class="tl"><b>Topic ${TOPIC[d.lesson]}</b><em>${d.lesson === 'LD' ? 'Long Division' : 'Lesson ' + d.lesson}</em></span><span>${d.page}</span>`}</div></section>`;
   h += `<div id="resultArea"></div><div class="submitbox" id="submitBox"><p>Finished? Submit this day’s homework to see your score and download your PDF.</p>
         <button class="tb fill" id="submitBtn">Submit ${d.day} homework</button></div>`;
   $('main').innerHTML = h;
@@ -415,7 +482,7 @@ function paint(d, q){
 function counts(){
   const d = dayOf(S.day), qs = d.blocks.flatMap(b => b.qs);
   const done = qs.filter(q => filled(q, S.ans[qid(d, q)])).length;
-  $('nDone').textContent = done; $('nAll').textContent = qs.length; $('dayName').textContent = 'Page ' + d.page;
+  $('nDone').textContent = done; $('nAll').textContent = qs.length; $('dayName').textContent = pgL(d);
   $('fill').style.width = Math.round(done / qs.length * 100) + '%';
 }
 
@@ -514,7 +581,7 @@ function check(id){
 function askSubmit(d){
   if (needName()) return;
   const qs = d.blocks.flatMap(b => b.qs), blank = qs.filter(q => !filled(q, S.ans[qid(d, q)])).length;
-  modal(`<h3>Submit ${d.day} homework?</h3><p><b>${esc(S.name)}</b> · ${S.cls} · Page ${d.page}</p>
+  modal(`<h3>Submit ${d.day} homework?</h3><p><b>${esc(S.name)}</b> · ${S.cls} · ${pgL(d)}</p>
     <p>${blank ? `You still have <b style="color:var(--bad)">${blank}</b> question${blank > 1 ? 's' : ''} not answered.` : 'You answered every question.'}</p>
     <div class="mb"><button class="tb" id="mNo">Go back</button><button class="tb fill" id="mYes">Submit</button></div>`);
   $('mNo').onclick = closeModal;
@@ -530,7 +597,7 @@ function showResult(d, scroll){
   const r = S.results[d.id], qs = d.blocks.flatMap(b => b.qs), pct = Math.round(r.score / r.total * 100);
   const msg = pct >= 90 ? 'Amazing work!' : pct >= 75 ? 'Great job!' : pct >= 50 ? 'Good effort! Keep practicing.' : 'Keep going, you can do it!';
   $('resultArea').innerHTML = `<div class="result">
-      <div class="who">${esc(S.name)} · ${S.cls} · ${d.day} ${d.date} · Page ${d.page}</div>
+      <div class="who">${esc(S.name)} · ${S.cls} · ${d.day} ${d.date} · ${pgL(d)}</div>
       <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap"><span class="score">${r.score} / ${r.total}</span><b>${pct}% · ${msg}</b></div>
       <div class="btns"><button class="tb fill" id="pdfBtn">⬇ Download PDF</button></div>
       <p class="note" id="sendNote">${r.sent ? '✓ Your result was sent to your teacher.' : ''}</p>
@@ -591,7 +658,7 @@ async function downloadPDF(d){
   doc.setTextColor(...NAVY); doc.setFont('helvetica', 'bold'); doc.setFontSize(18);
   doc.text('Grade 4 Math Homework', L, 20);
   doc.setFont('helvetica', 'normal'); doc.setFontSize(12); doc.setTextColor(60, 60, 60);
-  doc.text(pdfText(`${d.day} ${d.date} · Page ${d.page} · Lesson ${d.lesson} ${TITLES[d.lesson]}`), L, 27);
+  doc.text(pdfText(`${d.day} ${d.date} · ${pgL(d)} · ${d.lesson === 'LD' ? '' : 'Lesson ' + d.lesson + ' '}${TITLES[d.lesson]}`), L, 27);
   doc.setDrawColor(200, 200, 205); doc.setLineWidth(.6); doc.roundedRect(L, 33, R - L, 30, 3, 3, 'S');
   doc.setFontSize(11); doc.text('Name', L + 5, 41); doc.text('Class', L + 5, 49); doc.text('Submitted', L + 5, 57);
   doc.setTextColor(20, 20, 20); doc.setFont('helvetica', 'bold'); doc.text(pdfText(S.name), L + 30, 41); doc.text(S.cls, L + 30, 49);
@@ -619,7 +686,7 @@ async function downloadPDF(d){
   });
   const n = doc.getNumberOfPages();
   for (let i = 1; i <= n; i++){ doc.setPage(i); doc.setFontSize(8.5); doc.setTextColor(90, 90, 90); doc.setFont('helvetica', 'normal');
-    doc.text(pdfText(`${S.name} · ${S.cls} · ${d.day} ${d.date} · page ${d.page}`), L, H - 11); doc.text(`Page ${i} of ${n}`, R, H - 11, { align:'right' }); }
+    doc.text(pdfText(`${S.name} · ${S.cls} · ${d.day} ${d.date} · ${pgL(d).toLowerCase()}`), L, H - 11); doc.text(`Page ${i} of ${n}`, R, H - 11, { align:'right' }); }
   const file = (`Grade4_${S.cls}_${S.name}_${d.day}_p${d.page}`).replace(/[^A-Za-z0-9_]+/g, '_') + '.pdf';
   const blob = doc.output('blob');
   const downloads = window.claude && window.claude.use ? await window.claude.use('downloads') : null;
@@ -636,10 +703,20 @@ async function downloadPDF(d){
 
 /* ===================== start ===================== */
 (function start(){
-  try { const d = localStorage.getItem('g4hw51:day'); if (d && dayOf(d)) S.day = d; } catch(e){}
+  try { const d = localStorage.getItem('g4hw13:day'); if (d && dayOf(d)) S.day = d; } catch(e){}
   const g = load(); if (g){ S.ans = g.ans || {}; S.checked = g.checked || {}; S.results = g.results || {}; }
-  render(); flushQueue();
+  render(); flushQueue(); deepLink();
 })();
+
+/* ===================== deep link: open a single question (used by Mission Mode) ===================== */
+function deepLink(){
+  const m = decodeURIComponent(location.hash).match(/^#q=(g4-\d+):(\d+)$/);
+  if (!m || !dayOf(m[1])) return;
+  if (S.day !== m[1]){ S.day = m[1]; rememberDay(); render(); }
+  const el = $('q_' + m[1] + '_' + m[2]); if (!el) return;
+  setTimeout(() => { el.scrollIntoView({ behavior:'smooth', block:'center' }); el.classList.add('flash'); setTimeout(() => el.classList.remove('flash'), 3500); }, 120);
+}
+window.addEventListener('hashchange', deepLink);
 </script>
 
 </body></html>
